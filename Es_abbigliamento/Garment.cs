@@ -1,0 +1,192 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Es_abbigliamento
+{
+    /// <summary>
+    /// Base Class garment.
+    /// </summary>
+    public class Garment
+    {
+        //Base class garment, use this class for create all different type of garment.
+
+        //Fields of base class
+        private string garmentBrand;
+        private double garmentPrice;
+        private string garmentColor;
+        private string garmentMaterial;
+        private string garmentType;
+        private static double garmentMinPrice = 0.0;
+
+        #region Properties
+
+        //Properties of base class
+
+        /// <summary>
+        /// Property min price, get/set the min price of the garment.
+        /// </summary>
+        public static double _minPrice
+        {
+            get
+            {
+                return garmentMinPrice;
+            }
+            set
+            {
+                if (value > 0.0)
+                {
+                    garmentMinPrice = value;
+                }
+                else
+                {
+                    throw new Exception("garment min Price must not be 0");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Property brand, get/set the brand of the garment.
+        /// </summary>
+        public string _garmentBrand
+        {
+            get
+            {
+                return garmentBrand;
+            }
+            set
+            {
+                if(value != string.Empty)
+                {
+                    garmentBrand = value;
+                }
+                else
+                {
+                    throw new Exception("garment Brand must not be empty");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Property price, get/set the price of the garment.
+        /// </summary>
+        public virtual double _garmentPrice 
+        {
+            get
+            {
+                return garmentPrice;
+            }
+            set
+            {
+                if (value > garmentMinPrice)
+                {
+                    garmentPrice = value;
+                }
+                else
+                {
+                    throw new Exception("garment Price must not be 0.0");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Property color, get/set the color of the garment.
+        /// </summary>
+        public string _garmentColor
+        {
+            get
+            {
+                return garmentColor;
+            }
+            set
+            {
+                if (value != String.Empty)
+                {
+                    garmentColor = value;
+                }
+                else
+                {
+                    throw new Exception("garment Color must not be empty");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Property material, get/set the material of the garment.
+        /// </summary>
+        public string _garmentMaterial
+        {
+            get
+            {
+                return garmentMaterial;
+            }
+            set
+            {
+                if (value != String.Empty)
+                {
+                    garmentMaterial = value;
+                }
+                else
+                {
+                    throw new Exception("garment Material must not be empty");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Property type, get/set the type of the garment (Uomo, Donna, Bambino, Bambina).
+        /// </summary>
+        public string _garmentType
+        {
+            get
+            {
+                return garmentType;
+            }
+            set
+            {
+                if (value != string.Empty)
+                {
+                    garmentType = value;
+                }
+                else
+                {
+                    throw new Exception("garment Type must not be empty");
+                }
+            }
+        }
+
+        #endregion
+
+        #region Constructors
+
+        //Constructors of the base class
+
+        //Base Constructor
+        public Garment()
+        {
+            garmentBrand = string.Empty;
+            garmentPrice = 0.0;
+            garmentColor = string.Empty;
+            garmentMaterial = string.Empty;
+            garmentType = string.Empty;
+        }
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Method for optain garment properties.
+        /// </summary>
+        /// <returns>String with all data of base class, separated by semicolon.</returns>
+        public virtual string viewDataOfGfarmentClass()
+        {
+            string stringData = string.Empty;
+
+            stringData = garmentBrand.ToString() + ";" + garmentPrice.ToString() + ";" + garmentColor.ToString() + ";" + garmentMaterial.ToString() + ";" + garmentType.ToString();
+
+            return stringData;  //==> return string with base class data
+        }
+
+        #endregion
+    }
+}
