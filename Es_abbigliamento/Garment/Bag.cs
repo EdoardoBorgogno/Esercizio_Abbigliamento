@@ -18,6 +18,15 @@ namespace Es_abbigliamento
         private string garmentSize;
         private string garmentSeason;
 
+        //Constructor
+        public Bag() : base()
+        {
+            garmentTypology = String.Empty;
+            garmentSize = String.Empty;
+            garmentSeason = String.Empty;
+            _garmentClassType = typeof(Bag);
+        }
+
         #region Garment element list
 
         //List with garment typology

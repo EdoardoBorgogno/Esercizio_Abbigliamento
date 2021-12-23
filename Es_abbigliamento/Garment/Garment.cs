@@ -11,37 +11,52 @@ namespace Es_abbigliamento
         //Base class garment, use this class for create all different type of garment.
 
         //Fields of base class
+        private int garmentId;
+        private Type garmentClassType;
         private string garmentBrand;
         private double garmentPrice;
         private string garmentColor;
         private string garmentMaterial;
         private string garmentType;
-        private static double garmentMinPrice = 0.0;
+
+        #region List Garment
+
+        List<string> garmentTypeList = new List<string>()
+        {
+            "uomo",
+            "donna",
+            "bambino",
+            "bambina"
+        };
+
+        #endregion
 
         #region Properties
 
         //Properties of base class
 
         /// <summary>
-        /// Property min price, get/set the min price of the garment.
+        /// Property id, get/set the id of the garment.
         /// </summary>
-        public static double _minPrice
+        public int _garmentId
         {
             get
             {
-                return garmentMinPrice;
+                return garmentId;
             }
             set
             {
-                if (value > 0.0)
-                {
-                    garmentMinPrice = value;
-                }
-                else
-                {
-                    throw new Exception("garment min Price must not be 0");
-                }
+                garmentId = value;
             }
+        }
+
+        /// <summary>
+        /// Property garmentClassType, get/set the property class type.
+        /// </summary>
+        public Type _garmentClassType
+        {
+            get { return garmentClassType; }
+            set { garmentClassType = value; }
         }
 
         /// <summary>
@@ -77,7 +92,7 @@ namespace Es_abbigliamento
             }
             set
             {
-                if (value > garmentMinPrice)
+                if (value > 0.0)
                 {
                     garmentPrice = value;
                 }
@@ -154,6 +169,17 @@ namespace Es_abbigliamento
             }
         }
 
+        /// <summary>
+        /// Get garmentTypeList, this list contains all possibility for set the type of the garment.
+        /// </summary>
+        public List<string> _garmentTypeList
+        {
+            get
+            {
+                return garmentTypeList;
+            }
+        }
+
         #endregion
 
         #region Constructors
@@ -167,6 +193,7 @@ namespace Es_abbigliamento
             garmentPrice = 0.0;
             garmentColor = string.Empty;
             garmentMaterial = string.Empty;
+            garmentId = 0;
             garmentType = string.Empty;
         }
 
@@ -182,7 +209,7 @@ namespace Es_abbigliamento
         {
             string stringData = string.Empty;
 
-            stringData = garmentBrand.ToString() + ";" + garmentPrice.ToString() + ";" + garmentColor.ToString() + ";" + garmentMaterial.ToString() + ";" + garmentType.ToString();
+            stringData = garmentId.ToString() + ";" + garmentClassType.ToString().Remove(0, "Es_abbigliamento.".Length) + ";" + garmentBrand.ToString() + ";" + garmentPrice.ToString() + ";" + garmentColor.ToString() + ";" + garmentMaterial.ToString() + ";" + garmentType.ToString();
 
             return stringData;  //==> return string with base class data
         }

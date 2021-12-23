@@ -117,56 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="design_and_development_process_2040883" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\design-and-development-process-2040883.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="downloading_data_4085810" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\downloading-data-4085810.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="garment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man_developing_website_on_desk_2040889" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man-developing-website-on-desk-2040889.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="message" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\message.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="success_2103905" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\success-2103905.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_interface_123__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-interface-123 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_interface_123__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-interface-123 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="website_designing_2103528" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\website-designing-2103528.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="website_designing_2103528__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\website-designing-2103528 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ParentFormHome_exitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC
+        pQAAAqUB5N8bEgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKySURBVGhD7Zk7
+        ixRBFIWvoIn4FozFzETRVfERGRop/gpZn+D+CDVWMDAxMPGBsGtmYLqBYDsqLvgcExHRwMAdV6Q81Z52
+        aqqrumsHqruC+uDA0n1u1a3ZOlPTM5LJZDKZTCYR1DPZqV7IUfVU1vPS1Ogx1EBmoF281B1qSTaq57IA
+        Keo7GjnF26tGFXK6HGM83ryeg7fjg+ZvGpNX+oX/2EFagtE1ZW19vBu0xAeTma+mqfdocAttrWhvWeMe
+        6ytt8cFkvgVpPVBK1tDqRXtKr3sMrQ4X5N5ypi7Q6kV7rJpJFXKd1vi0bBWtFSz6CO018M54AJ6RVWPq
+        o3ol22jvhoYwVxq6muKL8c7ymlqBDtPeLZj4ktGIS/N2nnDtvuWx1bpdoxEQbJ2F87S358bxAnROUJ6w
+        hQJy49yivRCQJ52ZptxMdShHBU215alJ/eXGR1Ce3FroPTc+AvJkK53c+AjIU6XGwzcp0GxIni7Snj76
+        7HEsYFIDOUd72uC82YOGl2sLqGuERc2wLE34JLtkNd6kt3j03szy9ECDd6yGQ3SP5WmB7XPW0WyoZjlM
+        GqCh/VDz880/ue5pLeONZB+H6xccjBvQUFNufuNsOoaGD+Fv//lUyJsk8oRmmnNTyGVatXeudn9Sd2nt
+        BzQwazU0qYE8Mj+nlZ/3Cnno9FYq5Azt3cLz5metobE+qdeynfb/YJFbce+D5TU1wqK6zVNobmivgYbb
+        87Qom2iPDya86mxkrDlavWiPVWPrGq3xwWRDa3JTQc83fH4yvx+39ZnW+GAy35kydOXGh/aWNe6xvtEW
+        H2y5K44Gpnq+0TVlbX28W7TEBwfgOkx4G/rDyb+gsRO8vWpQexJj/OBYWo87/TmlAhPvUC9lr3oia3lp
+        asofvAo5juNgNy9lMplMJpPpF5G/ZcuFtwsJLSYAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

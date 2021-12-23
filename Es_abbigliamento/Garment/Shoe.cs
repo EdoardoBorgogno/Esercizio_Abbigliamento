@@ -19,6 +19,16 @@ namespace Es_abbigliamento
         private string garmentOpeningMode;
         private string garmentSole;
 
+        //Constructor
+        public Shoe() : base()
+        {
+            garmentTypology = String.Empty;
+            garmentSize = 0;
+            garmentOpeningMode = String.Empty;
+            garmentSole = String.Empty;
+            _garmentClassType = typeof(Shoe);
+        }
+
         #region Garment element list
 
         //List with garment typology
@@ -88,7 +98,7 @@ namespace Es_abbigliamento
                 }
                 else
                 {
-                    throw new Exception("Error with your size input");
+                    throw new Exception("Error with your input size");
                 }
             }
         }
@@ -155,7 +165,7 @@ namespace Es_abbigliamento
         {
             get
             {
-                return _garmentOpeningModeList;
+                return garmentOpeningModeList;
             }
         }
 

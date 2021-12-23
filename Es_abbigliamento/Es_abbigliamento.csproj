@@ -46,33 +46,172 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bag.cs" />
-    <Compile Include="FileTxt.cs" />
-    <Compile Include="Garment.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="BaseInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BaseInfoForm.Designer.cs">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Jackets.cs" />
+    <Compile Include="CompleteAdviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteAdviceForm.Designer.cs">
+      <DependentUpon>CompleteAdviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\IndumentiPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\IndumentiPanel.Designer.cs">
+      <DependentUpon>IndumentiPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\IndumentiView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\IndumentiView.Designer.cs">
+      <DependentUpon>IndumentiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\BagControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\BagControl.Designer.cs">
+      <DependentUpon>BagControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\BaseControl.Designer.cs">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\JacketControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\JacketControl.Designer.cs">
+      <DependentUpon>JacketControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\ShoesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\ShoesControl.Designer.cs">
+      <DependentUpon>ShoesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\TrouserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\TrouserControl.Designer.cs">
+      <DependentUpon>TrouserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\AddGarment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\AddGarment.Designer.cs">
+      <DependentUpon>AddGarment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garment\Bag.cs" />
+    <Compile Include="Garment\Garment.cs" />
+    <Compile Include="UserControlsManageForm\ClassData.cs" />
+    <Compile Include="UserControlsManageForm\DeleteGarmentControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\DeleteGarmentControls.Designer.cs">
+      <DependentUpon>DeleteGarmentControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentFormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentFormHome.Designer.cs">
+      <DependentUpon>ParentFormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garment\Jackets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shoe.cs" />
-    <Compile Include="Sweater.cs" />
-    <Compile Include="Trousers.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Garment\Shoe.cs" />
+    <Compile Include="Garment\Sweater.cs" />
+    <Compile Include="Garment\Trousers.cs" />
+    <Compile Include="UserControlsGarment\SweterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\SweterControl.Designer.cs">
+      <DependentUpon>SweterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\InsertComplete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\InsertComplete.Designer.cs">
+      <DependentUpon>InsertComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\WorkArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\WorkArea.Designer.cs">
+      <DependentUpon>WorkArea.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseInfoForm.resx">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsGarment\BagControl.resx">
+      <DependentUpon>BagControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsGarment\BaseControl.resx">
+      <DependentUpon>BaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsGarment\JacketControl.resx">
+      <DependentUpon>JacketControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsGarment\ShoesControl.resx">
+      <DependentUpon>ShoesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsGarment\TrouserControl.resx">
+      <DependentUpon>TrouserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\AddGarment.resx">
+      <DependentUpon>AddGarment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\DeleteGarmentControls.resx">
+      <DependentUpon>DeleteGarmentControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentFormHome.resx">
+      <DependentUpon>ParentFormHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="UserControlsGarment\SweterControl.resx">
+      <DependentUpon>SweterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\IndumentiPanel.resx">
+      <DependentUpon>IndumentiPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\IndumentiView.resx">
+      <DependentUpon>IndumentiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\InsertComplete.resx">
+      <DependentUpon>InsertComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\WorkArea.resx">
+      <DependentUpon>WorkArea.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,6 +224,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-interface-123 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-interface-123 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-designing-2103528.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website-designing-2103528 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success-2103905.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloading-data-4085810.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design-and-development-process-2040883.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-developing-website-on-desk-2040889.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

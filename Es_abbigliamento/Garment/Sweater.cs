@@ -19,6 +19,16 @@ namespace Es_abbigliamento
         private string garmentSleeve;
         private string garmentOpeningMode;
 
+        //Constructor
+        public Sweater() : base()
+        {
+            garmentTypology = String.Empty;
+            garmentSize = String.Empty;
+            garmentSleeve = String.Empty;
+            garmentOpeningMode = String.Empty;
+            _garmentClassType = typeof(Sweater);
+        }
+
         #region Garment element list
 
         //List with garment typology
@@ -158,7 +168,7 @@ namespace Es_abbigliamento
         {
             get
             {
-                return _garmentTypologyList;
+                return garmentTypologyList;
             }
         }
 

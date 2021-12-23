@@ -19,6 +19,16 @@ namespace Es_abbigliamento
         private string garmentLength;
         private string garmentFit;
 
+        //Constructor
+        public Trousers() : base()
+        {
+            garmentTypology = String.Empty;
+            garmentSize = 0;
+            garmentLength = String.Empty;
+            garmentFit = String.Empty;
+            _garmentClassType = typeof(Trousers);
+        }
+
         #region Garment element list
 
         //List with garment typology
