@@ -106,5 +106,37 @@ namespace Es_abbigliamento
         #endregion
 
         #endregion
+
+        #region Drag Form
+
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
+        //Start drag
+        private void ParentFormHome_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = Location;
+        }
+
+        //Function for set the new form position
+        private void ParentFormHome_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point sub = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(sub));
+            }
+        }
+
+        //end drag
+        private void ParentFormHome_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        #endregion
     }
 }

@@ -213,6 +213,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.ParentFormHome_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ParentFormHome_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ParentFormHome_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ParentFormHome_MouseUp);
             this.leftSidePanel.ResumeLayout(false);
             this.leftSidePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ParentFormHome_exitButton)).EndInit();

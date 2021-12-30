@@ -93,7 +93,7 @@ namespace Es_abbigliamento.UserControlsManageForm
         }
     
         /// <summary>
-        /// 
+        /// Delete line from stock file;
         /// </summary>
         /// <param name="garmentId"></param>
         /// <returns></returns>
@@ -120,6 +120,128 @@ namespace Es_abbigliamento.UserControlsManageForm
             File.WriteAllLines(fileStockSave, fileLines);
 
             return deleteIsCompleted;
+        }
+    
+        /// <summary>
+        /// Read all line from stockFile
+        /// </summary>
+        /// <returns></returns>
+        public static List<Garment> readGarmentDataFromStock()
+        {
+            List<Garment> garmentsList = new List<Garment>();
+
+            foreach(string garment in File.ReadLines(fileStockSave))
+            {
+                garmentsList.Add(identifyGarmentType(garment));
+            }
+
+            return garmentsList;
+        }
+
+        /// <summary>
+        /// Return garment object, execute downcast for optaine shoe, jacket, sweater.. .
+        /// </summary>
+        /// <param name="garmentDataString"></param>
+        /// <returns></returns>
+        private static Garment identifyGarmentType(string garmentDataString)
+        {
+            Garment garmentObject = new Garment();
+
+            string[] arrayGarmentData = garmentDataString.Split(';');
+
+            switch (arrayGarmentData[1])
+            {
+                case "Bag":
+
+                    Bag bag = new Bag();
+
+                    setBasePropertiesGarment((Garment)bag, arrayGarmentData);
+                    bag._garmentClassType = typeof(Bag);
+
+                    bag._garmentTypology = arrayGarmentData[7];
+                    bag._garmentSize = arrayGarmentData[8];
+                    bag._garmentSeason = arrayGarmentData[9];
+
+                    garmentObject = bag;
+
+                    break;
+                case "Jackets":
+
+                    Jackets jackets = new Jackets();
+
+                    setBasePropertiesGarment((Garment)jackets, arrayGarmentData);
+                    jackets._garmentClassType = typeof(Jackets);
+
+                    jackets._garmentTypology = arrayGarmentData[7];
+                    jackets._garmentSize = arrayGarmentData[8];
+                    jackets._garmentSeason = arrayGarmentData[9];
+
+                    garmentObject = jackets;
+
+                    break;
+                case "Shoe":
+
+                    Shoe shoe = new Shoe();
+
+                    setBasePropertiesGarment((Garment)shoe, arrayGarmentData);
+                    shoe._garmentClassType = typeof(Shoe);
+
+                    shoe._garmentTypology = arrayGarmentData[7];
+                    shoe._garmentSize = Convert.ToInt16(arrayGarmentData[8]);
+                    shoe._garmentOpeningMode = arrayGarmentData[9];
+                    shoe._garmentSole = arrayGarmentData[10];
+
+                    garmentObject = shoe;
+
+                    break;
+                case "Sweater":
+
+                    Sweater sweater = new Sweater();
+
+                    setBasePropertiesGarment((Garment)sweater, arrayGarmentData);
+                    sweater._garmentClassType = typeof(Sweater);
+
+                    sweater._garmentTypology = arrayGarmentData[7];
+                    sweater._garmentSize = arrayGarmentData[8];
+                    sweater._garmentSleeve = arrayGarmentData[9];
+                    sweater._garmentOpeningMode = arrayGarmentData[10];
+
+                    garmentObject = sweater;
+
+                    break;
+                case "Trousers":
+
+                    Trousers trousers = new Trousers();
+
+                    setBasePropertiesGarment((Garment)trousers, arrayGarmentData);
+                    trousers._garmentClassType = typeof(Trousers);
+
+                    trousers._garmentTypology = arrayGarmentData[7];
+                    trousers._garmentSize = Convert.ToInt16(arrayGarmentData[8]);
+                    trousers._garmentLength = arrayGarmentData[9];
+                    trousers._garmentFit = arrayGarmentData[10];
+
+                    garmentObject = trousers;
+
+                    break;
+            }
+
+            return garmentObject;
+        }
+
+        /// <summary>
+        /// Call this function for set base properties of garment. 
+        /// </summary>
+        /// <param name="garmentObj"></param>
+        /// <param name="arrayData"></param>
+        private static void setBasePropertiesGarment(Garment garmentObj, string[] arrayData)
+        {
+            garmentObj._garmentId = Convert.ToInt32(arrayData[0]);
+            garmentObj._garmentBrand = arrayData[2];
+            garmentObj._garmentPrice = Convert.ToDouble(arrayData[3]);
+            garmentObj._garmentColor = arrayData[4];            
+            garmentObj._garmentMaterial = arrayData[5];
+            garmentObj._garmentType = arrayData[6];
         }
     }
 }

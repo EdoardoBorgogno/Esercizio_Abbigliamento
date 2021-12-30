@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Es_abbigliamento
 {
@@ -50,6 +51,7 @@ namespace Es_abbigliamento
             }
         }
 
+        [Browsable(false)]
         /// <summary>
         /// Property garmentClassType, get/set the property class type.
         /// </summary>
@@ -57,6 +59,14 @@ namespace Es_abbigliamento
         {
             get { return garmentClassType; }
             set { garmentClassType = value; }
+        }
+
+        /// <summary>
+        /// Property garmentClassTypeString, get the property class type in string (Bag, Sweater...).
+        /// </summary>
+        public string garmentClassTypeString
+        {
+            get { return garmentClassType.ToString().Remove(0, "Es_abbigliamento.".Length); }
         }
 
         /// <summary>
@@ -103,6 +113,7 @@ namespace Es_abbigliamento
             }
         }
 
+        [Browsable(false)]
         /// <summary>
         /// Property color, get/set the color of the garment.
         /// </summary>
@@ -125,6 +136,7 @@ namespace Es_abbigliamento
             }
         }
 
+        [Browsable(false)]
         /// <summary>
         /// Property material, get/set the material of the garment.
         /// </summary>
@@ -146,7 +158,7 @@ namespace Es_abbigliamento
                 }
             }
         }
-
+      
         /// <summary>
         /// Property type, get/set the type of the garment (Uomo, Donna, Bambino, Bambina).
         /// </summary>
