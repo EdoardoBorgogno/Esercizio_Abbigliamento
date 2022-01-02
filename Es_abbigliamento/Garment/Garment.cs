@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Es_abbigliamento.Properties;
 
 namespace Es_abbigliamento
 {

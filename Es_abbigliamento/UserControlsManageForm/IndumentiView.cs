@@ -74,6 +74,7 @@ namespace Es_abbigliamento.UserControlsManageForm
         private void txtSearchIndumenti_TextChanged(object sender, EventArgs e)
         {
             viewIndumenti_dataGrid.DataSource = null;
+
             listGarmnetFiltred.Clear();
 
             if(txtSearchIndumenti.Text == String.Empty)
@@ -82,61 +83,93 @@ namespace Es_abbigliamento.UserControlsManageForm
             }
             else
             {
-                bool isInsert = false;
-
-                foreach(Garment item in listGarmentStock)
-                {
-                    if (item._garmentId.ToString().StartsWith(txtSearchIndumenti.Text)) 
-                    {
-                        listGarmnetFiltred.Add((Garment)item);
-                        isInsert = true;
-                    }
-
-                    if(item._garmentBrand.StartsWith(txtSearchIndumenti.Text) && isInsert == false)
-                    {
-                        listGarmnetFiltred.Add((Garment)item);
-                        isInsert = true;
-                    }
-
-                    if (item.garmentClassTypeString.StartsWith(txtSearchIndumenti.Text) && isInsert == false)
-                    {
-                        listGarmnetFiltred.Add((Garment)item);
-                        isInsert = true;
-                    }
-
-                    if (item._garmentPrice.ToString().StartsWith(txtSearchIndumenti.Text) && isInsert == false)
-                    {
-                        listGarmnetFiltred.Add((Garment)item);
-                        isInsert = true;
-                    }
-
-                    if (item._garmentType.ToString().StartsWith(txtSearchIndumenti.Text) && isInsert == false)
-                    {
-                        listGarmnetFiltred.Add((Garment)item);
-                        isInsert = true;
-                    }
-
-                    isInsert = false;
-                }
+                executeListFilter();
 
                 viewIndumenti_dataGrid.DataSource = listGarmnetFiltred;
 
-                foreach (DataGridViewRow row in viewIndumenti_dataGrid.Rows)
-                {
-                    foreach (DataGridViewCell cell in row.Cells)
-                    {
-                        if(cell.Value.ToString().StartsWith(txtSearchIndumenti.Text))
-                        {
-                            cell.Style.ForeColor = Color.FromArgb(255, 209, 0);
-                        }
-                    }
-                }
+                dataGridSeacrhColor();
             }
 
             manageDatagridDesign();
 
             viewIndumenti_dataGrid.ClearSelection();
 
+        }
+
+        //From stockList get all garment that contain txtIndumenti text.
+        private void executeListFilter()
+        {
+            bool isInsert = false;
+
+            foreach (Garment item in listGarmentStock)
+            {
+                if (item._garmentId.ToString().StartsWith(txtSearchIndumenti.Text))
+                {
+                    listGarmnetFiltred.Add((Garment)item);
+                    isInsert = true;
+                }
+
+                if (item._garmentBrand.StartsWith(txtSearchIndumenti.Text) && isInsert == false)
+                {
+                    listGarmnetFiltred.Add((Garment)item);
+                    isInsert = true;
+                }
+
+                if (item.garmentClassTypeString.StartsWith(txtSearchIndumenti.Text) && isInsert == false)
+                {
+                    listGarmnetFiltred.Add((Garment)item);
+                    isInsert = true;
+                }
+
+                if (item._garmentPrice.ToString().StartsWith(txtSearchIndumenti.Text) && isInsert == false)
+                {
+                    listGarmnetFiltred.Add((Garment)item);
+                    isInsert = true;
+                }
+
+                if (item._garmentType.ToString().StartsWith(txtSearchIndumenti.Text) && isInsert == false)
+                {
+                    listGarmnetFiltred.Add((Garment)item);
+                    isInsert = true;
+                }
+
+                isInsert = false;
+            }
+        }
+
+        //Set different color for cell where is present txtIndumenti text.
+        private void dataGridSeacrhColor()
+        {
+            foreach (DataGridViewRow row in viewIndumenti_dataGrid.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value.ToString().StartsWith(txtSearchIndumenti.Text))
+                    {
+                        cell.Style.ForeColor = Color.FromArgb(255, 209, 0);
+                    }
+                }
+            }
+        }
+
+        private void viewIndumenti_dataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowIndex = e.RowIndex;
+            int columnIndex = 0;
+
+            MessageBox.Show(viewIndumenti_dataGrid.Rows[rowIndex].Cells[columnIndex].Value.ToString());
+        }
+
+        //
+        // Manage focus on txtIndumenti
+        //
+        private void txtIndumenti_searchPanel_Paint(object sender, PaintEventArgs e)
+        {
+            txtSearchIndumenti.Focus();
+        }
+        private void txtIndumenti_searchPicture_Click(object sender, EventArgs e)
+        {
+            txtSearchIndumenti.Focus();
         }
     }
 }

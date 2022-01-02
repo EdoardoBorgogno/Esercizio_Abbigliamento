@@ -139,11 +139,40 @@ namespace Es_abbigliamento.UserControlsManageForm
         }
 
         /// <summary>
+        /// Read last 10 line from stockFile.
+        /// </summary>
+        /// <returns></returns>
+        public static List<Garment> readLastGarmentFromStock(int countLastLine)
+        {
+            List<Garment> garmentsList = new List<Garment>();
+
+            var fileLines = File.ReadLines(fileStockSave).Reverse();
+
+            foreach (string garment in fileLines)
+            {
+                if(countLastLine > 0)
+                {
+                    garmentsList.Add(identifyGarmentType(garment));
+
+                    countLastLine--;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            garmentsList.Reverse();
+
+            return garmentsList;
+        }
+
+        /// <summary>
         /// Return garment object, execute downcast for optaine shoe, jacket, sweater.. .
         /// </summary>
         /// <param name="garmentDataString"></param>
         /// <returns></returns>
-        private static Garment identifyGarmentType(string garmentDataString)
+        public static Garment identifyGarmentType(string garmentDataString)
         {
             Garment garmentObject = new Garment();
 

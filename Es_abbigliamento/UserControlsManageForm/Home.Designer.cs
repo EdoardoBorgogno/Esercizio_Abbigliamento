@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.homeLbl_yourStack = new System.Windows.Forms.Label();
             this.yourStock_panelReport = new System.Windows.Forms.Panel();
             this.yourStock_panelReport_txt = new System.Windows.Forms.Label();
@@ -38,11 +42,19 @@
             this.yourStock_panelDownload = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.yourStock_panelDownload_Title = new System.Windows.Forms.Label();
-            this.home_last10elemet = new System.Windows.Forms.DataGridView();
+            this.home_dataGridLastElement = new System.Windows.Forms.DataGridView();
+            this.home_lblSecondPanel = new System.Windows.Forms.Label();
+            this.home_secondPanel = new System.Windows.Forms.Panel();
+            this.home_noGarmentPanel = new System.Windows.Forms.Panel();
+            this.home_noGarmentTitle = new System.Windows.Forms.Label();
+            this.home_buttonWorkArea = new System.Windows.Forms.Button();
+            this.home_WorkAreaText = new System.Windows.Forms.Label();
             this.yourStock_panelReport.SuspendLayout();
             this.yourStock_panelWork.SuspendLayout();
             this.yourStock_panelDownload.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.home_last10elemet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_dataGridLastElement)).BeginInit();
+            this.home_secondPanel.SuspendLayout();
+            this.home_noGarmentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // homeLbl_yourStack
@@ -149,37 +161,165 @@
             this.yourStock_panelDownload_Title.TabIndex = 7;
             this.yourStock_panelDownload_Title.Text = "Download";
             // 
-            // home_last10elemet
+            // home_dataGridLastElement
             // 
-            this.home_last10elemet.BackgroundColor = System.Drawing.Color.White;
-            this.home_last10elemet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.home_last10elemet.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.home_last10elemet.Location = new System.Drawing.Point(433, 247);
-            this.home_last10elemet.Name = "home_last10elemet";
-            this.home_last10elemet.RowHeadersWidth = 51;
-            this.home_last10elemet.RowTemplate.Height = 24;
-            this.home_last10elemet.Size = new System.Drawing.Size(398, 381);
-            this.home_last10elemet.TabIndex = 4;
+            this.home_dataGridLastElement.AllowUserToAddRows = false;
+            this.home_dataGridLastElement.AllowUserToDeleteRows = false;
+            this.home_dataGridLastElement.AllowUserToResizeColumns = false;
+            this.home_dataGridLastElement.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            this.home_dataGridLastElement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.home_dataGridLastElement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.home_dataGridLastElement.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.home_dataGridLastElement.BackgroundColor = System.Drawing.Color.White;
+            this.home_dataGridLastElement.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.home_dataGridLastElement.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.home_dataGridLastElement.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.home_dataGridLastElement.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(12);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.home_dataGridLastElement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.home_dataGridLastElement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.home_dataGridLastElement.DefaultCellStyle = dataGridViewCellStyle3;
+            this.home_dataGridLastElement.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.home_dataGridLastElement.EnableHeadersVisualStyles = false;
+            this.home_dataGridLastElement.GridColor = System.Drawing.Color.White;
+            this.home_dataGridLastElement.Location = new System.Drawing.Point(0, 0);
+            this.home_dataGridLastElement.MultiSelect = false;
+            this.home_dataGridLastElement.Name = "home_dataGridLastElement";
+            this.home_dataGridLastElement.ReadOnly = true;
+            this.home_dataGridLastElement.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.home_dataGridLastElement.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.home_dataGridLastElement.RowHeadersVisible = false;
+            this.home_dataGridLastElement.RowHeadersWidth = 51;
+            this.home_dataGridLastElement.RowTemplate.Height = 24;
+            this.home_dataGridLastElement.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.home_dataGridLastElement.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.home_dataGridLastElement.Size = new System.Drawing.Size(407, 343);
+            this.home_dataGridLastElement.TabIndex = 4;
+            // 
+            // home_lblSecondPanel
+            // 
+            this.home_lblSecondPanel.AutoSize = true;
+            this.home_lblSecondPanel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_lblSecondPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(51)))));
+            this.home_lblSecondPanel.Location = new System.Drawing.Point(15, 241);
+            this.home_lblSecondPanel.Name = "home_lblSecondPanel";
+            this.home_lblSecondPanel.Size = new System.Drawing.Size(163, 24);
+            this.home_lblSecondPanel.TabIndex = 5;
+            this.home_lblSecondPanel.Text = "Ultimi Inserimenti";
+            // 
+            // home_secondPanel
+            // 
+            this.home_secondPanel.Controls.Add(this.home_dataGridLastElement);
+            this.home_secondPanel.Controls.Add(this.home_noGarmentPanel);
+            this.home_secondPanel.Location = new System.Drawing.Point(19, 278);
+            this.home_secondPanel.Name = "home_secondPanel";
+            this.home_secondPanel.Size = new System.Drawing.Size(407, 343);
+            this.home_secondPanel.TabIndex = 6;
+            // 
+            // home_noGarmentPanel
+            // 
+            this.home_noGarmentPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.home_noGarmentPanel.Controls.Add(this.home_WorkAreaText);
+            this.home_noGarmentPanel.Controls.Add(this.home_buttonWorkArea);
+            this.home_noGarmentPanel.Controls.Add(this.home_noGarmentTitle);
+            this.home_noGarmentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.home_noGarmentPanel.Location = new System.Drawing.Point(0, 0);
+            this.home_noGarmentPanel.Name = "home_noGarmentPanel";
+            this.home_noGarmentPanel.Size = new System.Drawing.Size(407, 343);
+            this.home_noGarmentPanel.TabIndex = 7;
+            this.home_noGarmentPanel.Visible = false;
+            // 
+            // home_noGarmentTitle
+            // 
+            this.home_noGarmentTitle.AutoSize = true;
+            this.home_noGarmentTitle.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_noGarmentTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(51)))));
+            this.home_noGarmentTitle.Location = new System.Drawing.Point(115, 101);
+            this.home_noGarmentTitle.Name = "home_noGarmentTitle";
+            this.home_noGarmentTitle.Size = new System.Drawing.Size(172, 24);
+            this.home_noGarmentTitle.TabIndex = 7;
+            this.home_noGarmentTitle.Text = "Inserisci Indumenti";
+            // 
+            // home_buttonWorkArea
+            // 
+            this.home_buttonWorkArea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.home_buttonWorkArea.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.home_buttonWorkArea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.home_buttonWorkArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.home_buttonWorkArea.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_buttonWorkArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(51)))));
+            this.home_buttonWorkArea.Location = new System.Drawing.Point(84, 235);
+            this.home_buttonWorkArea.Name = "home_buttonWorkArea";
+            this.home_buttonWorkArea.Size = new System.Drawing.Size(231, 44);
+            this.home_buttonWorkArea.TabIndex = 8;
+            this.home_buttonWorkArea.Text = "Vai a work area";
+            this.home_buttonWorkArea.UseVisualStyleBackColor = true;
+            this.home_buttonWorkArea.Click += new System.EventHandler(this.home_buttonWorkArea_Click);
+            // 
+            // home_WorkAreaText
+            // 
+            this.home_WorkAreaText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_WorkAreaText.Location = new System.Drawing.Point(82, 135);
+            this.home_WorkAreaText.Name = "home_WorkAreaText";
+            this.home_WorkAreaText.Size = new System.Drawing.Size(233, 83);
+            this.home_WorkAreaText.TabIndex = 9;
+            this.home_WorkAreaText.Text = "Utilizza questa tabella per visualizzare gli ultimi elementi inseriti";
+            this.home_WorkAreaText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.home_last10elemet);
+            this.Controls.Add(this.home_secondPanel);
+            this.Controls.Add(this.home_lblSecondPanel);
             this.Controls.Add(this.yourStock_panelDownload);
             this.Controls.Add(this.yourStock_panelWork);
             this.Controls.Add(this.yourStock_panelReport);
             this.Controls.Add(this.homeLbl_yourStack);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(846, 642);
+            this.Load += new System.EventHandler(this.Home_Load);
             this.yourStock_panelReport.ResumeLayout(false);
             this.yourStock_panelReport.PerformLayout();
             this.yourStock_panelWork.ResumeLayout(false);
             this.yourStock_panelWork.PerformLayout();
             this.yourStock_panelDownload.ResumeLayout(false);
             this.yourStock_panelDownload.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.home_last10elemet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_dataGridLastElement)).EndInit();
+            this.home_secondPanel.ResumeLayout(false);
+            this.home_noGarmentPanel.ResumeLayout(false);
+            this.home_noGarmentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +337,12 @@
         private System.Windows.Forms.Label yourStock_panelWork_Title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label yourStock_panelDownload_Title;
-        private System.Windows.Forms.DataGridView home_last10elemet;
+        private System.Windows.Forms.DataGridView home_dataGridLastElement;
+        private System.Windows.Forms.Label home_lblSecondPanel;
+        private System.Windows.Forms.Panel home_secondPanel;
+        private System.Windows.Forms.Panel home_noGarmentPanel;
+        private System.Windows.Forms.Label home_noGarmentTitle;
+        private System.Windows.Forms.Button home_buttonWorkArea;
+        private System.Windows.Forms.Label home_WorkAreaText;
     }
 }

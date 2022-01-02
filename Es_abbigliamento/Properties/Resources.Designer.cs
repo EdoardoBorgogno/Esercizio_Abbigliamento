@@ -63,6 +63,16 @@ namespace Es_abbigliamento.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bag {
+            get {
+                object obj = ResourceManager.GetObject("Bag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap design_and_development_process_2040883 {
             get {
                 object obj = ResourceManager.GetObject("design_and_development_process_2040883", resourceCulture);
@@ -106,6 +116,16 @@ namespace Es_abbigliamento.Properties {
         internal static System.Drawing.Bitmap graph {
             get {
                 object obj = ResourceManager.GetObject("graph", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jackets {
+            get {
+                object obj = ResourceManager.GetObject("Jackets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +193,39 @@ namespace Es_abbigliamento.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Shoe {
+            get {
+                object obj = ResourceManager.GetObject("Shoe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap success_2103905 {
             get {
                 object obj = ResourceManager.GetObject("success_2103905", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sweater {
+            get {
+                object obj = ResourceManager.GetObject("Sweater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trousers {
+            get {
+                object obj = ResourceManager.GetObject("Trousers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
