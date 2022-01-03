@@ -55,6 +55,9 @@ namespace Es_abbigliamento.UserControlsManageForm
                 if (deleteIsCompleted)
                 {
                     new CompleteAdviceForm("Eliminazione", "Eliminazione completata con successo").ShowDialog();
+
+                    this.Controls.Clear();
+                    this.Controls.Add(new WorkArea());
                 }
                 else
                 {

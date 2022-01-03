@@ -70,6 +70,12 @@
     <Compile Include="UserControlsManageForm\IndumentiView.Designer.cs">
       <DependentUpon>IndumentiView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsManageForm\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="WarningForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +215,9 @@
     <EmbeddedResource Include="UserControlsManageForm\InsertComplete.resx">
       <DependentUpon>InsertComplete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlsManageForm\WorkArea.resx">
       <DependentUpon>WorkArea.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,6 +302,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-2103908 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

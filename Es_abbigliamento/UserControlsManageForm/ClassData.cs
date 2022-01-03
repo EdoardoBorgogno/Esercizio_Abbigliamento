@@ -162,9 +162,20 @@ namespace Es_abbigliamento.UserControlsManageForm
                 }
             }
 
-            garmentsList.Reverse();
-
             return garmentsList;
+        }
+
+        /// <summary>
+        /// Get the number of garment in your stock file.
+        /// </summary>
+        /// <returns></returns>
+        public static int getNumberOfGarment()
+        {
+            int count;
+
+            count = File.ReadLines(fileStockSave).Count();
+
+            return count;
         }
 
         /// <summary>

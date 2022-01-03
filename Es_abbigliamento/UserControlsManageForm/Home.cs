@@ -25,6 +25,8 @@ namespace Es_abbigliamento
         //When load read last element from stock and put in datagridview.
         private void Home_Load(object sender, EventArgs e)
         {
+
+            // Work on datagridview
             if(ClassData.funLastIdStockFile() != -1)
             {
                 manageDataGridView();
@@ -35,6 +37,10 @@ namespace Es_abbigliamento
 
                 home_noGarmentPanel.Visible = true;
             }
+
+            //work on garment report panel
+            string textOfNum = " Indumenti";
+            home_lblGarmentNumber.Text = ClassData.getNumberOfGarment().ToString() + textOfNum;
 
         }
 
