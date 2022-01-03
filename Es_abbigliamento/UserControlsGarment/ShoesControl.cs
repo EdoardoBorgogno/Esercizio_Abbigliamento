@@ -113,6 +113,7 @@ namespace Es_abbigliamento.UserControlsGarment
                 shoeObject._garmentTypology = shoeCmbTypology.SelectedItem.ToString();
                 shoeObject._garmentSize = (short)shoeNumSize.Value;
                 shoeObject._garmentOpeningMode = shoeCmbOpeningMode.SelectedItem.ToString();
+                shoeObject._garmentSole = shoeCmbSole.SelectedItem.ToString();
             }
             catch (Exception ex)
             {

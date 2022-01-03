@@ -103,6 +103,13 @@ namespace Es_abbigliamento
             containerPanel.Controls.Add(new IndumentiPanel());
         }
 
+        //Reports btn
+        private void leftSidePanel_buttonReports_Click(object sender, EventArgs e)
+        {
+            containerPanel.Controls.Clear();
+            containerPanel.Controls.Add(new Report());
+        }
+
         #endregion
 
         #endregion

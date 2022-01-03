@@ -136,6 +136,7 @@
             this.leftSidePanel_buttonReports.TabIndex = 3;
             this.leftSidePanel_buttonReports.Text = "Reports";
             this.leftSidePanel_buttonReports.UseVisualStyleBackColor = false;
+            this.leftSidePanel_buttonReports.Click += new System.EventHandler(this.leftSidePanel_buttonReports_Click);
             // 
             // leftSidePanel_buttonHome
             // 
