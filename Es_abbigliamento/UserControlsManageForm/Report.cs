@@ -30,6 +30,7 @@ namespace Es_abbigliamento.UserControlsManageForm
             {"Sweaters", 0 },
             {"Trousers", 0 }
         };
+        List<Garment> garmentsList;
 
         /// <summary>
         /// Constuctor
@@ -38,8 +39,10 @@ namespace Es_abbigliamento.UserControlsManageForm
         {
             InitializeComponent();
 
+            garmentsList = ClassData.readGarmentDataFromStock();
+
             //save number of garment for each type
-            foreach (var garment in ClassData.readGarmentDataFromStock())
+            foreach (var garment in garmentsList)
             {
                 switch (garment.garmentClassTypeString)
                 {
@@ -68,6 +71,8 @@ namespace Es_abbigliamento.UserControlsManageForm
 
             try
             {
+                managePanel();
+
                 manageCharts();
             }
             catch (Exception)
@@ -75,6 +80,62 @@ namespace Es_abbigliamento.UserControlsManageForm
                 new WarningForm("Errore", "Problema con il caricamento della pagina!");
             }
             
+        }
+
+        //Function for manage panel.
+        private void managePanel()
+        {
+            numberGarment_lblNum.Text = (data["Bags"] + data["Jackets"] + data["Shoes"] + data["Sweaters"] + data["Trousers"]).ToString();
+
+            bestBrand_lblNum.Text = searchBestBrand();
+
+            string mediumPrice = (totalStockPrice() / garmentsList.Count).ToString("n2");
+            mediumPrice_lblNum.Text = mediumPrice;
+        }
+
+        //Function for sum all price of garment in stock
+        private double totalStockPrice()
+        {
+            double total = 0.0;
+
+            foreach(var garment in garmentsList)
+            {
+                total += garment._garmentPrice;
+            }
+
+            return total;
+        }
+
+        //Function for search the most inserted brand
+        private string searchBestBrand()
+        {
+            Dictionary<string, int> brandDic = new Dictionary<string, int>();
+
+            string mostOccurance = string.Empty;
+
+            foreach(var garment in garmentsList)
+            {
+                if (brandDic.ContainsKey(garment._garmentBrand))
+                {
+                    brandDic[garment._garmentBrand]++;
+                }
+                else
+                {
+                    brandDic.Add(garment._garmentBrand, 1);
+                }
+            }
+
+            int max = 0;
+            foreach(var item in brandDic)
+            {
+                if(item.Value > max)
+                {
+                    mostOccurance = item.Key;
+                    max = item.Value;
+                }
+            }
+
+            return mostOccurance;
         }
 
         //Function for manage graph load
@@ -139,7 +200,7 @@ namespace Es_abbigliamento.UserControlsManageForm
             garmentPie.Visible = true;
             garmentPie.HoverPushOut = 3;
 
-            garmentPie.LegendLocation = LegendLocation.Right;
+            garmentPie.LegendLocation = LegendLocation.Top;
         }
     }
 }

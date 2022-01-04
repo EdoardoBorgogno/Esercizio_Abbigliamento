@@ -123,6 +123,16 @@ namespace Es_abbigliamento.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garment__1_ {
+            get {
+                object obj = ResourceManager.GetObject("garment__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap graph {
             get {
                 object obj = ResourceManager.GetObject("graph", resourceCulture);
@@ -136,6 +146,16 @@ namespace Es_abbigliamento.Properties {
         internal static System.Drawing.Bitmap Jackets {
             get {
                 object obj = ResourceManager.GetObject("Jackets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_adidas {
+            get {
+                object obj = ResourceManager.GetObject("logo_adidas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +196,16 @@ namespace Es_abbigliamento.Properties {
         internal static System.Drawing.Bitmap pc {
             get {
                 object obj = ResourceManager.GetObject("pc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap price {
+            get {
+                object obj = ResourceManager.GetObject("price", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

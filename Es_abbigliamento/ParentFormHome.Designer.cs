@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentFormHome));
             this.leftSidePanel = new System.Windows.Forms.Panel();
-            this.leftSidePanel_buttonSettings = new System.Windows.Forms.Button();
             this.leftSidePanel_buttonWorkArea = new System.Windows.Forms.Button();
             this.leftSidePanel_buttonIndumenti = new System.Windows.Forms.Button();
             this.leftSidePanel_buttonReports = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@
             // leftSidePanel
             // 
             this.leftSidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(51)))));
-            this.leftSidePanel.Controls.Add(this.leftSidePanel_buttonSettings);
             this.leftSidePanel.Controls.Add(this.leftSidePanel_buttonWorkArea);
             this.leftSidePanel.Controls.Add(this.leftSidePanel_buttonIndumenti);
             this.leftSidePanel.Controls.Add(this.leftSidePanel_buttonReports);
@@ -58,25 +56,6 @@
             this.leftSidePanel.Name = "leftSidePanel";
             this.leftSidePanel.Size = new System.Drawing.Size(298, 700);
             this.leftSidePanel.TabIndex = 0;
-            // 
-            // leftSidePanel_buttonSettings
-            // 
-            this.leftSidePanel_buttonSettings.BackColor = System.Drawing.Color.Transparent;
-            this.leftSidePanel_buttonSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.leftSidePanel_buttonSettings.FlatAppearance.BorderSize = 0;
-            this.leftSidePanel_buttonSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.leftSidePanel_buttonSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.leftSidePanel_buttonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.leftSidePanel_buttonSettings.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leftSidePanel_buttonSettings.ForeColor = System.Drawing.Color.White;
-            this.leftSidePanel_buttonSettings.Image = global::Es_abbigliamento.Properties.Resources.setting;
-            this.leftSidePanel_buttonSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.leftSidePanel_buttonSettings.Location = new System.Drawing.Point(40, 602);
-            this.leftSidePanel_buttonSettings.Name = "leftSidePanel_buttonSettings";
-            this.leftSidePanel_buttonSettings.Size = new System.Drawing.Size(255, 50);
-            this.leftSidePanel_buttonSettings.TabIndex = 6;
-            this.leftSidePanel_buttonSettings.Text = "    Impostazioni";
-            this.leftSidePanel_buttonSettings.UseVisualStyleBackColor = false;
             // 
             // leftSidePanel_buttonWorkArea
             // 
@@ -234,7 +213,6 @@
         private System.Windows.Forms.Panel containerPanel;
         private System.Windows.Forms.PictureBox ParentFormHome_exitButton;
         private System.Windows.Forms.Button leftSidePanel_buttonWorkArea;
-        private System.Windows.Forms.Button leftSidePanel_buttonSettings;
         private System.Windows.Forms.Label leftSidePanel_TitleApp;
     }
 }
