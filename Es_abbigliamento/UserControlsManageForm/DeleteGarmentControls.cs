@@ -69,5 +69,11 @@ namespace Es_abbigliamento.UserControlsManageForm
                 new WarningForm("Attenzione", "Il valore inserito non è valido!").ShowDialog();
             }
         }
+
+        private void delete_IndumentiPanel_Click_1(object sender, EventArgs e)
+        {
+            Controls.Clear();
+            Controls.Add(new IndumentiPanel());
+        }
     }
 }

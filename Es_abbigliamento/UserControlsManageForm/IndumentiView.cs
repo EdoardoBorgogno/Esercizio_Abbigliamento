@@ -27,15 +27,26 @@ namespace Es_abbigliamento.UserControlsManageForm
         public IndumentiView()
         {
             InitializeComponent();
+
+            listGarmentStock = ClassData.readGarmentDataFromStock();
         }
 
         //manage data grid view for display garments info.
         private void IndumentiView_Load(object sender, EventArgs e)
         {
-            listGarmentStock = ClassData.readGarmentDataFromStock();
-            viewIndumenti_dataGrid.DataSource = listGarmentStock;
 
-            manageDatagridDesign();
+            if (listGarmentStock.Count == 0)
+            {
+                Controls.Clear();
+                Controls.Add(new noGarmentReport());
+            }
+            else
+            {
+                viewIndumenti_dataGrid.DataSource = listGarmentStock;
+
+                manageDatagridDesign();
+            }
+
         }
 
         //Set colums name and data grid design properties

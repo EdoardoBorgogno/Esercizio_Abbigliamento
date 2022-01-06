@@ -19,6 +19,28 @@ namespace Es_abbigliamento.UserControlsGarment
     {
         //==> Bags user control
 
+        //properties
+        public ComboBox _bagCmbType
+        {
+            get {  return bagCmbType; }
+            set { bagCmbType = value; }
+        }
+        public ComboBox _bagCmbTypology
+        {
+            get {  return bagCmbTypology;}
+            set { bagCmbTypology = value; }
+        }
+        public ComboBox _bagCmbSize
+        {
+            get { return bagCmbSize; }
+            set {  bagCmbSize = value; }
+        }
+        public ComboBox _bagCmbSeason
+        {
+            get { return bagCmbSeason; }
+            set { bagCmbSeason = value; }
+        }
+
         //Constructor
         public BagControl()
         {

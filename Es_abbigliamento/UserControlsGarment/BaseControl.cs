@@ -21,11 +21,14 @@ namespace Es_abbigliamento.UserControlsGarment
         public string _garmentTxtPrice { get => garmentTxtPrice.Text; set => garmentTxtPrice.Text = value; }
         public string _garmentTxtColor { get => garmentTxtColor.Text; set => garmentTxtColor.Text = value; }
         public string _garmentTxtMaterial { get => garmentTxtMaterial.Text; set => garmentTxtMaterial.Text = value; }
+        public string _garmentBtnText { get => garmentBtnInsert.Text; set => garmentBtnInsert.Text = value; }
 
         //Constructor
         public BaseControl()
         {
             InitializeComponent();
+
+            garmentBtnInsert.Text = "Inserisci";
         }
 
         //Button Function Click

@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.delete_IndumentiPanel = new System.Windows.Forms.Button();
             this.delete_txtId = new System.Windows.Forms.TextBox();
+            this.id__ = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +111,7 @@
             this.delete_IndumentiPanel.TabIndex = 9;
             this.delete_IndumentiPanel.Text = "Apri Indumenti";
             this.delete_IndumentiPanel.UseVisualStyleBackColor = false;
+            this.delete_IndumentiPanel.Click += new System.EventHandler(this.delete_IndumentiPanel_Click_1);
             // 
             // delete_txtId
             // 
@@ -120,11 +122,22 @@
             this.delete_txtId.Size = new System.Drawing.Size(246, 29);
             this.delete_txtId.TabIndex = 10;
             // 
+            // id__
+            // 
+            this.id__.AutoSize = true;
+            this.id__.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id__.Location = new System.Drawing.Point(228, 517);
+            this.id__.Name = "id__";
+            this.id__.Size = new System.Drawing.Size(20, 19);
+            this.id__.TabIndex = 18;
+            this.id__.Text = "id";
+            // 
             // DeleteGarmentControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.id__);
             this.Controls.Add(this.delete_txtId);
             this.Controls.Add(this.delete_IndumentiPanel);
             this.Controls.Add(this.label1);
@@ -150,5 +163,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button delete_IndumentiPanel;
         private System.Windows.Forms.TextBox delete_txtId;
+        private System.Windows.Forms.Label id__;
     }
 }

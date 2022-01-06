@@ -92,6 +92,36 @@ namespace Es_abbigliamento.UserControlsManageForm
             return lastId;
         }
     
+        public static bool modifyGarmentStock(Garment garment)
+        {
+            bool modify = true;
+
+            var fileLines = File.ReadLines(fileStockSave).ToList();
+
+            for (int i = 0; i < fileLines.Count(); i++)
+            {
+                string[] arraySplitLine = fileLines[i].Split(';');
+
+                if (Convert.ToInt32(arraySplitLine[0]) == garment._garmentId)
+                {
+                    try
+                    {
+                        fileLines.RemoveAt(i);
+                        fileLines.Insert(i, garment.viewDataOfGfarmentClass());
+                    }
+                    catch(Exception ex)
+                    {
+                        modify = false;
+                    }
+
+
+                    break;
+                }
+            }
+
+            return modify;
+        }
+
         /// <summary>
         /// Delete line from stock file;
         /// </summary>

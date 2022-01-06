@@ -45,7 +45,14 @@ namespace Es_abbigliamento
             deleteGarmentControls.BringToFront();
         }
 
-        #endregion
+        //open mod garment usercontrol
+        private void workArea_buttonChanges_Click(object sender, EventArgs e)
+        {
+            userControlModGarment userControlModGarment = new userControlModGarment();
+            this.Controls.Add(userControlModGarment);
+            userControlModGarment.BringToFront();
+        }
 
+        #endregion
     }
 }

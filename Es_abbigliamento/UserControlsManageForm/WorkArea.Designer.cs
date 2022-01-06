@@ -78,6 +78,7 @@
             this.workArea_buttonChanges.TabIndex = 3;
             this.workArea_buttonChanges.Text = "Modifica";
             this.workArea_buttonChanges.UseVisualStyleBackColor = true;
+            this.workArea_buttonChanges.Click += new System.EventHandler(this.workArea_buttonChanges_Click);
             // 
             // workArea_imgBig
             // 

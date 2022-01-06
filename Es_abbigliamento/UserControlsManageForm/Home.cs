@@ -71,5 +71,12 @@ namespace Es_abbigliamento
             this.Controls.Clear();
             this.Controls.Add(new WorkArea());
         }
+
+        //Open report control
+        private void btnGoToReport_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new Report());
+        }
     }
 }

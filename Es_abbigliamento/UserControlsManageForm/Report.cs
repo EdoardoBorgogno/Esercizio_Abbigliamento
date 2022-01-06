@@ -41,26 +41,34 @@ namespace Es_abbigliamento.UserControlsManageForm
 
             garmentsList = ClassData.readGarmentDataFromStock();
 
-            //save number of garment for each type
-            foreach (var garment in garmentsList)
+            if(garmentsList.Count == 0)
             {
-                switch (garment.garmentClassTypeString)
+                this.Controls.Clear();
+                this.Controls.Add(new noGarmentReport());
+            }
+            else
+            {
+                //save number of garment for each type
+                foreach (var garment in garmentsList)
                 {
-                    case "Bag":
-                        data["Bags"]++;
-                        break;
-                    case "Jackets":
-                        data["Jackets"]++;
-                        break;
-                    case "Shoe":
-                        data["Shoes"]++;
-                        break;
-                    case "Sweater":
-                        data["Sweaters"]++;
-                        break;
-                    case "Trousers":
-                        data["Trousers"]++;
-                        break;
+                    switch (garment.garmentClassTypeString)
+                    {
+                        case "Bag":
+                            data["Bags"]++;
+                            break;
+                        case "Jackets":
+                            data["Jackets"]++;
+                            break;
+                        case "Shoe":
+                            data["Shoes"]++;
+                            break;
+                        case "Sweater":
+                            data["Sweaters"]++;
+                            break;
+                        case "Trousers":
+                            data["Trousers"]++;
+                            break;
+                    }
                 }
             }
         }
@@ -142,6 +150,7 @@ namespace Es_abbigliamento.UserControlsManageForm
         private void manageCharts()
         {
             pieChartDesign();
+            solidGaugeDesign();
 
             Func<ChartPoint, string> labelPoint = chartPoint => string.Format("");
 
@@ -192,6 +201,33 @@ namespace Es_abbigliamento.UserControlsManageForm
             garmentPie.Series = piechartData;
         }
 
+        //Function for set the style properties of solid gauge
+        private void solidGaugeDesign()
+        {
+            solidGauge.From = 0;
+            solidGauge.To = 10;
+            solidGauge.Value = 0;
+            solidGauge.Visible = true;
+
+            solidGauge.Base.GaugeActiveFill = System.Windows.Media.Brushes.OrangeRed;
+        }
+
+        //Function for search the highest price in list
+        private double maxPriceAllGarments()
+        {
+            double maxPrice = 0;
+
+            foreach(var garment in garmentsList)
+            {
+                if(garment._garmentPrice > maxPrice)
+                {
+                    maxPrice = garment._garmentPrice; 
+                }
+            }
+
+            return Math.Round(maxPrice);
+        }
+
         //Function for set the style properties of pieChart
         private void pieChartDesign()
         {
@@ -201,6 +237,30 @@ namespace Es_abbigliamento.UserControlsManageForm
             garmentPie.HoverPushOut = 3;
 
             garmentPie.LegendLocation = LegendLocation.Top;
+        }
+
+        //Function for change the data in solid gauge
+        private void cmbTypeSolidGauge_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            double total = 0;
+            int countGarment = 0;
+            double max = 0;
+
+            foreach(var garment in garmentsList)
+            {
+                string typeOfGarment = cmbTypeSolidGauge.SelectedItem.ToString();
+                if (garment.garmentClassTypeString == typeOfGarment)
+                {
+                    total += garment._garmentPrice;
+                    countGarment++;
+
+                    if (garment._garmentPrice > max)
+                        max = garment._garmentPrice;
+                }
+            }
+        
+            solidGauge.Value = Math.Round(total / countGarment, 0);
+            solidGauge.To = Math.Round(max, 0);
         }
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="CompleteAdviceForm.Designer.cs">
       <DependentUpon>CompleteAdviceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsGarment\BagControlMod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\BagControlMod.Designer.cs">
+      <DependentUpon>BagControlMod.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlsManageForm\IndumentiPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,11 +91,23 @@
     <Compile Include="UserControlsManageForm\IndumentiView.Designer.cs">
       <DependentUpon>IndumentiView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsManageForm\noGarmentReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\noGarmentReport.Designer.cs">
+      <DependentUpon>noGarmentReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlsManageForm\Report.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlsManageForm\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\userControlModGarment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\userControlModGarment.Designer.cs">
+      <DependentUpon>userControlModGarment.cs</DependentUpon>
     </Compile>
     <Compile Include="WarningForm.cs">
       <SubType>Form</SubType>
@@ -230,8 +248,14 @@
     <EmbeddedResource Include="UserControlsManageForm\InsertComplete.resx">
       <DependentUpon>InsertComplete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\noGarmentReport.resx">
+      <DependentUpon>noGarmentReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlsManageForm\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\userControlModGarment.resx">
+      <DependentUpon>userControlModGarment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlsManageForm\WorkArea.resx">
       <DependentUpon>WorkArea.cs</DependentUpon>

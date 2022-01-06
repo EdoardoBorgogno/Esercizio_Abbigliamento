@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.homeLbl_yourStack = new System.Windows.Forms.Label();
             this.yourStock_panelReport = new System.Windows.Forms.Panel();
             this.yourStock_panelReport_txt = new System.Windows.Forms.Label();
@@ -50,9 +50,10 @@
             this.home_buttonWorkArea = new System.Windows.Forms.Button();
             this.home_noGarmentTitle = new System.Windows.Forms.Label();
             this.homePanelInfo = new System.Windows.Forms.Panel();
-            this.homePanelInfoImage = new System.Windows.Forms.PictureBox();
-            this.home_lblGarmentNumber = new System.Windows.Forms.Label();
             this.home_lblTextReport = new System.Windows.Forms.Label();
+            this.home_lblGarmentNumber = new System.Windows.Forms.Label();
+            this.homePanelInfoImage = new System.Windows.Forms.PictureBox();
+            this.btnGoToReport = new System.Windows.Forms.Button();
             this.yourStock_panelReport.SuspendLayout();
             this.yourStock_panelWork.SuspendLayout();
             this.yourStock_panelDownload.SuspendLayout();
@@ -173,14 +174,14 @@
             this.home_dataGridLastElement.AllowUserToDeleteRows = false;
             this.home_dataGridLastElement.AllowUserToResizeColumns = false;
             this.home_dataGridLastElement.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            this.home_dataGridLastElement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            this.home_dataGridLastElement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.home_dataGridLastElement.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.home_dataGridLastElement.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.home_dataGridLastElement.BackgroundColor = System.Drawing.Color.White;
@@ -188,25 +189,25 @@
             this.home_dataGridLastElement.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.home_dataGridLastElement.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.home_dataGridLastElement.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(12);
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.home_dataGridLastElement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(12);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.home_dataGridLastElement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.home_dataGridLastElement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle15.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.home_dataGridLastElement.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.home_dataGridLastElement.DefaultCellStyle = dataGridViewCellStyle11;
             this.home_dataGridLastElement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.home_dataGridLastElement.EnableHeadersVisualStyles = false;
             this.home_dataGridLastElement.GridColor = System.Drawing.Color.White;
@@ -215,15 +216,15 @@
             this.home_dataGridLastElement.Name = "home_dataGridLastElement";
             this.home_dataGridLastElement.ReadOnly = true;
             this.home_dataGridLastElement.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle16.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.home_dataGridLastElement.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.home_dataGridLastElement.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.home_dataGridLastElement.RowHeadersVisible = false;
             this.home_dataGridLastElement.RowHeadersWidth = 51;
             this.home_dataGridLastElement.RowTemplate.Height = 24;
@@ -305,6 +306,7 @@
             // homePanelInfo
             // 
             this.homePanelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.homePanelInfo.Controls.Add(this.btnGoToReport);
             this.homePanelInfo.Controls.Add(this.home_lblTextReport);
             this.homePanelInfo.Controls.Add(this.home_lblGarmentNumber);
             this.homePanelInfo.Controls.Add(this.homePanelInfoImage);
@@ -313,15 +315,15 @@
             this.homePanelInfo.Size = new System.Drawing.Size(325, 343);
             this.homePanelInfo.TabIndex = 7;
             // 
-            // homePanelInfoImage
+            // home_lblTextReport
             // 
-            this.homePanelInfoImage.Image = global::Es_abbigliamento.Properties.Resources.data_2103908__1_;
-            this.homePanelInfoImage.Location = new System.Drawing.Point(83, 19);
-            this.homePanelInfoImage.Name = "homePanelInfoImage";
-            this.homePanelInfoImage.Size = new System.Drawing.Size(155, 148);
-            this.homePanelInfoImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.homePanelInfoImage.TabIndex = 0;
-            this.homePanelInfoImage.TabStop = false;
+            this.home_lblTextReport.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_lblTextReport.Location = new System.Drawing.Point(0, 221);
+            this.home_lblTextReport.Name = "home_lblTextReport";
+            this.home_lblTextReport.Size = new System.Drawing.Size(319, 58);
+            this.home_lblTextReport.TabIndex = 2;
+            this.home_lblTextReport.Text = "Visualizza statistiche sul tuo magazzino.";
+            this.home_lblTextReport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // home_lblGarmentNumber
             // 
@@ -333,15 +335,31 @@
             this.home_lblGarmentNumber.Text = "Num";
             this.home_lblGarmentNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // home_lblTextReport
+            // homePanelInfoImage
             // 
-            this.home_lblTextReport.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home_lblTextReport.Location = new System.Drawing.Point(0, 231);
-            this.home_lblTextReport.Name = "home_lblTextReport";
-            this.home_lblTextReport.Size = new System.Drawing.Size(319, 58);
-            this.home_lblTextReport.TabIndex = 2;
-            this.home_lblTextReport.Text = "Visualizza statistiche sul tuo magazzino.";
-            this.home_lblTextReport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.homePanelInfoImage.Image = global::Es_abbigliamento.Properties.Resources.data_2103908__1_;
+            this.homePanelInfoImage.Location = new System.Drawing.Point(83, 19);
+            this.homePanelInfoImage.Name = "homePanelInfoImage";
+            this.homePanelInfoImage.Size = new System.Drawing.Size(155, 148);
+            this.homePanelInfoImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.homePanelInfoImage.TabIndex = 0;
+            this.homePanelInfoImage.TabStop = false;
+            // 
+            // btnGoToReport
+            // 
+            this.btnGoToReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGoToReport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGoToReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGoToReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToReport.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoToReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            this.btnGoToReport.Location = new System.Drawing.Point(79, 290);
+            this.btnGoToReport.Name = "btnGoToReport";
+            this.btnGoToReport.Size = new System.Drawing.Size(158, 37);
+            this.btnGoToReport.TabIndex = 3;
+            this.btnGoToReport.Text = "Vai a report";
+            this.btnGoToReport.UseVisualStyleBackColor = true;
+            this.btnGoToReport.Click += new System.EventHandler(this.btnGoToReport_Click);
             // 
             // Home
             // 
@@ -398,5 +416,6 @@
         private System.Windows.Forms.PictureBox homePanelInfoImage;
         private System.Windows.Forms.Label home_lblGarmentNumber;
         private System.Windows.Forms.Label home_lblTextReport;
+        private System.Windows.Forms.Button btnGoToReport;
     }
 }
