@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using Es_abbigliamento.UserControlsGarment;
 using System.Windows.Forms;
+using Es_abbigliamento.UserControlsManageForm;
 
 namespace Es_abbigliamento.UserControlsGarment
 {
@@ -57,5 +58,51 @@ namespace Es_abbigliamento.UserControlsGarment
         }
 
         #endregion
+
+        //Button insert click
+        protected override void garmentBtnInsert_Click(object sender, EventArgs e)
+        {
+            bool FieldsAreOk = funCheckFields();
+
+            if (FieldsAreOk)
+            {
+                Bag bagObject = new Bag();
+                bool loadIsOk = funLoadBagData(bagObject);
+
+                if (loadIsOk)
+                {
+                    bool modIsCompleted = ClassData.modifyGarmentStock(bagObject);
+                }
+
+                this.Controls.Clear();
+                this.Controls.Add(new WorkArea());
+            }
+        }
+
+        //Function for load data in the object
+        private bool funLoadBagData(Bag bagObject)
+        {
+            bool loadComplete = true;
+
+            try
+            {
+                bagObject._garmentId = bagMod._garmentId;
+                bagObject._garmentBrand = _garmentTxtBrand;
+                bagObject._garmentPrice = Convert.ToDouble(_garmentTxtPrice);
+                bagObject._garmentColor = _garmentTxtColor;
+                bagObject._garmentMaterial = _garmentTxtMaterial;
+                bagObject._garmentType = _bagCmbType.SelectedItem.ToString();
+                bagObject._garmentTypology = _bagCmbTypology.SelectedItem.ToString();
+                bagObject._garmentSize = _bagCmbSize.SelectedItem.ToString();
+                bagObject._garmentSeason = _bagCmbSeason.SelectedItem.ToString();
+            }
+            catch (Exception ex)
+            {
+                loadComplete = false;
+                new WarningForm("Errore", ex.Message);
+            }
+
+            return loadComplete;
+        }
     }
 }

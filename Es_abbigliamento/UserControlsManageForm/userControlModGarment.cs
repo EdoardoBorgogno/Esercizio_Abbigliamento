@@ -70,12 +70,20 @@ namespace Es_abbigliamento.UserControlsManageForm
                             this.Controls.Add(new BagControlMod(garmentObj));
                             break;
                         case "Jackets":
+                            this.Controls.Clear();
+                            this.Controls.Add(new JacketControlMod(garmentObj));
                             break;
                         case "Shoe":
+                            this.Controls.Clear();
+                            this.Controls.Add(new ShoesControlMod(garmentObj));
                             break;
                         case "Sweater":
+                            this.Controls.Clear();
+                            this.Controls.Add(new SweaterControlMod(garmentObj));
                             break;
                         case "Trousers":
+                            this.Controls.Clear();
+                            this.Controls.Add(new TrousersControlMod(garmentObj));
                             break;
                     }
                 }

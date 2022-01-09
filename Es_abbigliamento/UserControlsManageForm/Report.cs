@@ -262,5 +262,12 @@ namespace Es_abbigliamento.UserControlsManageForm
             solidGauge.Value = Math.Round(total / countGarment, 0);
             solidGauge.To = Math.Round(max, 0);
         }
+
+        // Function for open download Panel
+        private void downloadPanel_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new downloadGarment());
+        }
     }
 }

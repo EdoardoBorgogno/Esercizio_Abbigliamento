@@ -147,13 +147,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox jacketCmbTypology;
-        private System.Windows.Forms.Label jacketLblTypelogy;
-        private System.Windows.Forms.ComboBox jacketCmbSize;
-        private System.Windows.Forms.Label jacketLblSize;
-        private System.Windows.Forms.ComboBox jacketCmbType;
-        private System.Windows.Forms.Label jacketLblType;
-        private System.Windows.Forms.ComboBox jacketCmbSeason;
-        private System.Windows.Forms.Label jacketLblSeason;
+        protected System.Windows.Forms.ComboBox jacketCmbTypology;
+        protected System.Windows.Forms.Label jacketLblTypelogy;
+        protected System.Windows.Forms.ComboBox jacketCmbSize;
+        protected System.Windows.Forms.Label jacketLblSize;
+        protected System.Windows.Forms.ComboBox jacketCmbType;
+        protected System.Windows.Forms.Label jacketLblType;
+        protected System.Windows.Forms.ComboBox jacketCmbSeason;
+        protected System.Windows.Forms.Label jacketLblSeason;
     }
 }

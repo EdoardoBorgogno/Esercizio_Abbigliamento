@@ -172,15 +172,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label trouserLblTypology;
-        private System.Windows.Forms.ComboBox trouserCmbTypology;
-        private System.Windows.Forms.ComboBox trouserCmbType;
-        private System.Windows.Forms.Label touserLblType;
-        private System.Windows.Forms.ComboBox trouserCmbSize;
-        private System.Windows.Forms.Label troueserLblSize;
-        private System.Windows.Forms.ComboBox trouserCmbLength;
-        private System.Windows.Forms.Label trouserLblLength;
-        private System.Windows.Forms.ComboBox trouserCmbFit;
-        private System.Windows.Forms.Label trouserLblFit;
+        protected System.Windows.Forms.Label trouserLblTypology;
+        protected System.Windows.Forms.ComboBox trouserCmbTypology;
+        protected System.Windows.Forms.ComboBox trouserCmbType;
+        protected System.Windows.Forms.Label touserLblType;
+        protected System.Windows.Forms.ComboBox trouserCmbSize;
+        protected System.Windows.Forms.Label troueserLblSize;
+        protected System.Windows.Forms.ComboBox trouserCmbLength;
+        protected System.Windows.Forms.Label trouserLblLength;
+        protected System.Windows.Forms.ComboBox trouserCmbFit;
+        protected System.Windows.Forms.Label trouserLblFit;
     }
 }

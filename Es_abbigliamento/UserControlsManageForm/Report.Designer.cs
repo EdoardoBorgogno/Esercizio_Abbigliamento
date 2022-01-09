@@ -48,6 +48,10 @@
             this.cmbTypeSolidGauge = new System.Windows.Forms.ComboBox();
             this.lblDescriptionSolidGauge = new System.Windows.Forms.Label();
             this.lblTitleSolidGaugePanel = new System.Windows.Forms.Label();
+            this.downloadPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle_download = new System.Windows.Forms.Label();
+            this.download_pic = new System.Windows.Forms.PictureBox();
             this.garmentPie_panel.SuspendLayout();
             this.numberGarment_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numberGarment_pic)).BeginInit();
@@ -56,6 +60,8 @@
             this.bestBrand_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bestBrand_pic)).BeginInit();
             this.garmentPie_panelSolid.SuspendLayout();
+            this.downloadPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.download_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // garmentPie
@@ -278,11 +284,57 @@
             this.lblTitleSolidGaugePanel.TabIndex = 5;
             this.lblTitleSolidGaugePanel.Text = "Prezzo medio per Tipo";
             // 
+            // downloadPanel
+            // 
+            this.downloadPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
+            this.downloadPanel.Controls.Add(this.label1);
+            this.downloadPanel.Controls.Add(this.lblTitle_download);
+            this.downloadPanel.Controls.Add(this.download_pic);
+            this.downloadPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.downloadPanel.Location = new System.Drawing.Point(14, 456);
+            this.downloadPanel.Name = "downloadPanel";
+            this.downloadPanel.Size = new System.Drawing.Size(458, 162);
+            this.downloadPanel.TabIndex = 6;
+            this.downloadPanel.Click += new System.EventHandler(this.downloadPanel_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
+            this.label1.Location = new System.Drawing.Point(180, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 71);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Scarica file di inventario con un solo click";
+            // 
+            // lblTitle_download
+            // 
+            this.lblTitle_download.AutoSize = true;
+            this.lblTitle_download.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle_download.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+            this.lblTitle_download.Location = new System.Drawing.Point(179, 31);
+            this.lblTitle_download.Name = "lblTitle_download";
+            this.lblTitle_download.Size = new System.Drawing.Size(178, 25);
+            this.lblTitle_download.TabIndex = 5;
+            this.lblTitle_download.Text = "Scarica il tuo stock";
+            // 
+            // download_pic
+            // 
+            this.download_pic.BackColor = System.Drawing.Color.Transparent;
+            this.download_pic.Image = global::Es_abbigliamento.Properties.Resources.collaborate_2103904;
+            this.download_pic.Location = new System.Drawing.Point(3, -8);
+            this.download_pic.Name = "download_pic";
+            this.download_pic.Size = new System.Drawing.Size(170, 170);
+            this.download_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.download_pic.TabIndex = 0;
+            this.download_pic.TabStop = false;
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.downloadPanel);
             this.Controls.Add(this.garmentPie_panelSolid);
             this.Controls.Add(this.bestBrand_panel);
             this.Controls.Add(this.mediumPrice_panel);
@@ -303,6 +355,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bestBrand_pic)).EndInit();
             this.garmentPie_panelSolid.ResumeLayout(false);
             this.garmentPie_panelSolid.PerformLayout();
+            this.downloadPanel.ResumeLayout(false);
+            this.downloadPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.download_pic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -329,5 +384,9 @@
         private System.Windows.Forms.Label lblTitleSolidGaugePanel;
         private System.Windows.Forms.Label lblDescriptionSolidGauge;
         private System.Windows.Forms.ComboBox cmbTypeSolidGauge;
+        private System.Windows.Forms.Panel downloadPanel;
+        private System.Windows.Forms.PictureBox download_pic;
+        private System.Windows.Forms.Label lblTitle_download;
+        private System.Windows.Forms.Label label1;
     }
 }

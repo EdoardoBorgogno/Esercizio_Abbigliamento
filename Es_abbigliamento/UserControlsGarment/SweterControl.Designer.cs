@@ -163,15 +163,15 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label sweaterLblType;
-        private System.Windows.Forms.ComboBox sweaterCmbType;
-        private System.Windows.Forms.ComboBox sweaterCmbTypology;
-        private System.Windows.Forms.Label sweaterLblTypelogy;
-        private System.Windows.Forms.ComboBox sweaterCmbSize;
-        private System.Windows.Forms.Label sweaterLblSize;
-        private System.Windows.Forms.ComboBox sweaterCmbSleeve;
-        private System.Windows.Forms.Label sweaterLblSleeve;
-        private System.Windows.Forms.ComboBox sweaterCmbOpeningMode;
-        private System.Windows.Forms.Label sweaterLblOpeningMode;
+        protected System.Windows.Forms.Label sweaterLblType;
+        protected System.Windows.Forms.ComboBox sweaterCmbType;
+        protected System.Windows.Forms.ComboBox sweaterCmbTypology;
+        protected System.Windows.Forms.Label sweaterLblTypelogy;
+        protected System.Windows.Forms.ComboBox sweaterCmbSize;
+        protected System.Windows.Forms.Label sweaterLblSize;
+        protected System.Windows.Forms.ComboBox sweaterCmbSleeve;
+        protected System.Windows.Forms.Label sweaterLblSleeve;
+        protected System.Windows.Forms.ComboBox sweaterCmbOpeningMode;
+        protected System.Windows.Forms.Label sweaterLblOpeningMode;
     }
 }

@@ -186,15 +186,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox shoeCmbTypology;
-        private System.Windows.Forms.Label sweaterLblTypelogy;
-        private System.Windows.Forms.ComboBox shoeCmbType;
-        private System.Windows.Forms.Label sweaterLblType;
-        private System.Windows.Forms.Label shoesLblSize;
-        private System.Windows.Forms.ComboBox shoeCmbOpeningMode;
-        private System.Windows.Forms.Label shoeLblOpeningMode;
-        private System.Windows.Forms.ComboBox shoeCmbSole;
-        private System.Windows.Forms.Label shoeLblSole;
-        private System.Windows.Forms.NumericUpDown shoeNumSize;
+        protected System.Windows.Forms.ComboBox shoeCmbTypology;
+        protected System.Windows.Forms.Label sweaterLblTypelogy;
+        protected System.Windows.Forms.ComboBox shoeCmbType;
+        protected System.Windows.Forms.Label sweaterLblType;
+        protected System.Windows.Forms.Label shoesLblSize;
+        protected System.Windows.Forms.ComboBox shoeCmbOpeningMode;
+        protected System.Windows.Forms.Label shoeLblOpeningMode;
+        protected System.Windows.Forms.ComboBox shoeCmbSole;
+        protected System.Windows.Forms.Label shoeLblSole;
+        protected System.Windows.Forms.NumericUpDown shoeNumSize;
     }
 }

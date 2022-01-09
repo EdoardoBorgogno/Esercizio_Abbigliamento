@@ -78,5 +78,22 @@ namespace Es_abbigliamento
             this.Controls.Clear();
             this.Controls.Add(new Report());
         }
+
+        #region
+
+        //Open report
+        private void yourStock_panelReport_DoubleClick(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new Report());
+        }
+
+        //Open 
+        private void yourStock_panelWork_DoubleClick(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new WorkArea());
+        }
+        #endregion
     }
 }

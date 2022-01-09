@@ -92,6 +92,11 @@ namespace Es_abbigliamento.UserControlsManageForm
             return lastId;
         }
     
+        /// <summary>
+        /// Modify the data in filestock.
+        /// </summary>
+        /// <param name="garment"></param>
+        /// <returns></returns>
         public static bool modifyGarmentStock(Garment garment)
         {
             bool modify = true;
@@ -107,7 +112,25 @@ namespace Es_abbigliamento.UserControlsManageForm
                     try
                     {
                         fileLines.RemoveAt(i);
-                        fileLines.Insert(i, garment.viewDataOfGfarmentClass());
+
+                        switch (garment.garmentClassTypeString)
+                        {
+                            case "Bag":
+                                fileLines.Insert(i, (garment as Bag).viewDataOfGfarmentClass());
+                                break;
+                            case "Jackets":
+                                fileLines.Insert(i, (garment as Jackets).viewDataOfGfarmentClass());
+                                break;
+                            case "Shoe":
+                                fileLines.Insert(i, (garment as Shoe).viewDataOfGfarmentClass());
+                                break;
+                            case "Sweater":
+                                fileLines.Insert(i, (garment as Sweater).viewDataOfGfarmentClass());
+                                break;
+                            case "Trousers":
+                                fileLines.Insert(i, (garment as Trousers).viewDataOfGfarmentClass());
+                                break;
+                        }
                     }
                     catch(Exception ex)
                     {
@@ -118,6 +141,8 @@ namespace Es_abbigliamento.UserControlsManageForm
                     break;
                 }
             }
+
+            File.WriteAllLines(fileStockSave, fileLines);
 
             return modify;
         }

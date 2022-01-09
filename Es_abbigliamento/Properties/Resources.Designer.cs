@@ -73,6 +73,16 @@ namespace Es_abbigliamento.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap collaborate_2103904 {
+            get {
+                object obj = ResourceManager.GetObject("collaborate_2103904", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap data_2103908__1_ {
             get {
                 object obj = ResourceManager.GetObject("data_2103908__1_", resourceCulture);

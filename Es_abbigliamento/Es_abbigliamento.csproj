@@ -79,6 +79,36 @@
     <Compile Include="UserControlsGarment\BagControlMod.Designer.cs">
       <DependentUpon>BagControlMod.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsGarment\JacketControlMod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\JacketControlMod.Designer.cs">
+      <DependentUpon>JacketControlMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\ShoesControlMod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\ShoesControlMod.Designer.cs">
+      <DependentUpon>ShoesControlMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\SweaterControlMod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\SweaterControlMod.Designer.cs">
+      <DependentUpon>SweaterControlMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsGarment\TrousersControlMod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsGarment\TrousersControlMod.Designer.cs">
+      <DependentUpon>TrousersControlMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsManageForm\downloadGarment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlsManageForm\downloadGarment.Designer.cs">
+      <DependentUpon>downloadGarment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlsManageForm\IndumentiPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +121,7 @@
     <Compile Include="UserControlsManageForm\IndumentiView.Designer.cs">
       <DependentUpon>IndumentiView.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlsManageForm\ManageXml.cs" />
     <Compile Include="UserControlsManageForm\noGarmentReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,6 +256,9 @@
     <EmbeddedResource Include="UserControlsManageForm\DeleteGarmentControls.resx">
       <DependentUpon>DeleteGarmentControls.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlsManageForm\downloadGarment.resx">
+      <DependentUpon>downloadGarment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlsManageForm\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +388,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-adidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaborate-2103904.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

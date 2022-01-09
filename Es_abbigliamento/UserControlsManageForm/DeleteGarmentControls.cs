@@ -75,5 +75,15 @@ namespace Es_abbigliamento.UserControlsManageForm
             Controls.Clear();
             Controls.Add(new IndumentiPanel());
         }
+
+        private void id___Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delete_txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

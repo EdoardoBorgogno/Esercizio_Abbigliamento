@@ -121,6 +121,7 @@
             this.delete_txtId.Name = "delete_txtId";
             this.delete_txtId.Size = new System.Drawing.Size(246, 29);
             this.delete_txtId.TabIndex = 10;
+            this.delete_txtId.TextChanged += new System.EventHandler(this.delete_txtId_TextChanged);
             // 
             // id__
             // 
@@ -131,6 +132,7 @@
             this.id__.Size = new System.Drawing.Size(20, 19);
             this.id__.TabIndex = 18;
             this.id__.Text = "id";
+            this.id__.Click += new System.EventHandler(this.id___Click);
             // 
             // DeleteGarmentControls
             // 

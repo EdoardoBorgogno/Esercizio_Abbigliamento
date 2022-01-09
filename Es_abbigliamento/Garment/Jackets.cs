@@ -9,7 +9,7 @@ namespace Es_abbigliamento
     /// <summary>
     /// Jackets Class.
     /// </summary>
-    internal class Jackets : Garment
+    public class Jackets : Garment
     {
         //Jackets class ==> inheritance Garment base class
 
