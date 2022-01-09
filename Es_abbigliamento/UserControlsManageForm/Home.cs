@@ -79,7 +79,7 @@ namespace Es_abbigliamento
             this.Controls.Add(new Report());
         }
 
-        #region
+        #region Panel click
 
         //Open report
         private void yourStock_panelReport_DoubleClick(object sender, EventArgs e)
@@ -88,12 +88,21 @@ namespace Es_abbigliamento
             this.Controls.Add(new Report());
         }
 
-        //Open 
+        //Open Work Area
         private void yourStock_panelWork_DoubleClick(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.Controls.Add(new WorkArea());
         }
+
+        //Open download
+        private void yourStock_panelDownload_DoubleClick(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new downloadGarment());
+        }
+
         #endregion
+
     }
 }

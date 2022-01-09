@@ -166,9 +166,12 @@ namespace Es_abbigliamento.UserControlsManageForm
         private void viewIndumenti_dataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int rowIndex = e.RowIndex;
-            int columnIndex = 0;
 
-            MessageBox.Show(viewIndumenti_dataGrid.Rows[rowIndex].Cells[columnIndex].Value.ToString());
+            DataGridViewRow row = (DataGridViewRow)viewIndumenti_dataGrid.SelectedRows[0];
+
+            Garment garment = (Garment)row.DataBoundItem;
+
+            MessageBox.Show(garment.viewDataOfGfarmentClass().Replace(';', ' '));
         }
 
         //

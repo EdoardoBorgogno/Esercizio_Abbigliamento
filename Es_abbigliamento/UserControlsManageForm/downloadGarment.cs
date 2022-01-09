@@ -44,10 +44,14 @@ namespace Es_abbigliamento.UserControlsManageForm
             {
                 int id = Convert.ToInt32(txtId.Text);
                 var dataStock = ClassData.readGarmentDataFromStock();
+                bool downloadIsComplete = false;
 
                 Garment garment = dataStock.Where(x => x._garmentId == id).FirstOrDefault();
 
-                bool downloadIsComplete = ManageXml.garmentDataXML(garment);
+                if (garment != null)
+                {
+                    downloadIsComplete = ManageXml.garmentDataXML(garment);
+                }
 
                 if (downloadIsComplete)
                 {
